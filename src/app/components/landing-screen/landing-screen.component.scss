@@ -1,0 +1,55 @@
+.grid-content {
+    margin: auto;
+    width: 75%;
+    margin-top: 90px;
+
+    .action-logo {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.container {
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 8px;
+    color: blanchedalmond;
+    font-size: 17px;
+    border: 2px solid #CCCCCC;
+    border-radius: 4px;
+    font-weight: 500;
+    background-color: darkslategray;
+}
+
+mat-grid-tile {
+    width: calc((45% - 0px) * 1 + 25px) !important;
+    padding-top: calc((25% - 25px) * 1 + 0px) !important;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.container:hover {
+    border-bottom: 5px solid grey;
+    transform: translateY(-3px);
+    transition: all 0.2s ease-in-out;
+    // mask-image: linear-gradient(rgba(0, 0, 1, 0.7), transparent);
+}
+
+mat-grid-list {
+    position: relative;
+    margin-top: 35px;
+}
+
+.resize-grid {
+    width: calc((100% - 0px) * 1 + 25px) !important;
+    height: 125px;
+}

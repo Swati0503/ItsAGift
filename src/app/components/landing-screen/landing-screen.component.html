@@ -1,0 +1,20 @@
+<div class="grid-content">
+    <mat-grid-list [cols]="breakpoint" rowHeight="2:1" (window:resize)="onResize($event)">
+        <mat-grid-tile [ngClass]="{'resize-grid': breakpoint === 1}" class="container" routerLink="family">
+            <img class="action-logo" src="../../../assets/images/family.jpg" />
+            <div class="centered"> Family </div>
+        </mat-grid-tile>
+        <mat-grid-tile [ngClass]="{'resize-grid': breakpoint === 1}" class="container" routerLink="family-to-be">
+            <img class="action-logo" src="../../../assets/images/family-to-be.jpg" />
+            <div class="centered"> Family-To-Be </div>
+        </mat-grid-tile>
+        <mat-grid-tile [ngClass]="{'resize-grid': breakpoint === 1}" class="container" routerLink="relatives">
+            <img class="action-logo" src="../../../assets/images/relatives.jpg" />
+            <div class="centered"> Relatives </div>
+        </mat-grid-tile>
+        <mat-grid-tile [ngClass]="{'resize-grid': breakpoint === 1}" class="container" routerLink="friends">
+            <img class="action-logo" src="../../../assets/images/friends.jpg" />
+            <div class="centered"> Friends </div>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>
